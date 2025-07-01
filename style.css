@@ -1,0 +1,67 @@
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url("plain.jpg");
+            background-size: cover;
+        }
+
+        .clock {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .clock-face {
+            width: 25rem;
+            height: 25rem;
+            border: 15px solid #38575d;
+            border-radius: 50%;
+            position: relative;
+            background-color: #fff;
+            background-image:
+                radial-gradient(circle at center, #507D9C 8px, transparent 8px),
+                radial-gradient(circle at center, white 50%, transparent 50%, transparent 65%, white 65%),
+                linear-gradient(to right, transparent 50%, #507D9C 50%, transparent 51%),
+                linear-gradient(to bottom, transparent 50%, #507D9C 50%, transparent 51%),
+                linear-gradient(-30deg, transparent 50%, #507D9C 50%, transparent 51%),
+                linear-gradient(30deg, transparent 50%, #507D9C 50%, transparent 51%),
+                linear-gradient(60deg, transparent 50%, #507D9C 50%, transparent 51%),
+                linear-gradient(-60deg, transparent 50%, #507D9C 50%, transparent 51%);
+        }
+
+        .hand {
+            width: 30%;
+            height: 6px;
+            background-color: #fff;
+            border-radius: 4px;
+            position: absolute;
+            top: 49%;
+            left: 20%;
+            transform: rotate(90deg);
+            transform-origin: 100%;
+            transition: all 0.05s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .hand.second-hand {
+            background-color: #eb1717;
+            height: 3px;
+        }
+
+        .hand.min-hand {
+            background-color: #ebeb13;
+        }
+
+        .hand.hour-hand {
+            width: 27%;
+            height: 9px;
+            left: 23%;
+            background-color: #38575d;
+        }
