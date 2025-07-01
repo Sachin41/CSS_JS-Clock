@@ -1,7 +1,7 @@
 # Wall Clock
 
 1. In this web page created a digital wall clock , which is showing current time.
-2. I have used combination of CSS tansform and transistion property and updating dynamically using Js after some time interval.
+2. I have used combination of CSS tansform and transition property and updating dynamically using Js after some time interval.
 
 
 ## Demo
